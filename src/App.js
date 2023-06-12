@@ -3,6 +3,8 @@ import './App.css';
 import Counter from './comps/counter';
 import Gallery from './comps/gallery';
 import Colors from './comps/colors';
+import Movies from './comps/movies';
+import Calculator from './comps/calculator';
 
 function App() {
   return (
@@ -11,7 +13,11 @@ function App() {
       <hr/> 
       <Gallery/>
       <hr/>
-      <Colors/>
+      {/* <Colors/> */}
+      <hr/>
+      <Movies/>
+      <hr/>
+      {/* <Calculator/> */}
     </>
   );
 }

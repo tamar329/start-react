@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 
 export default class Gallery extends Component {
-    divStyle = {
-        background: "yellow",
-        padding: "16px"
-    }
 
     counter = 0;
     state = { counter: 0};

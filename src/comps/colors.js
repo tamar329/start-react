@@ -1,24 +1,18 @@
 import React, { Component } from 'react'
 
 export default class Colors extends Component {
-    divStyle = {
-        background: "yellow",
-        padding: "16px"
-    }
+    colorRef = React.createRef();
 
-    state = { value:""};
-    colors_ar = ["red", "blue", "green", "brown"]
-
-    updateColor = (event) => {
-        document.querySelector('#title').style.color = this.state.value;
-        this.setState({value: event.target.value})
-    }
+    // updateColor = (event) => {
+    //     this.setState({color: event.target.value})
+    // }
 
     render() {
         return (
             <div className='m-1'>
-                <h2 id='title'>Enter favorite color: {this.state.value}</h2>
-                <select value={this.state.value} onChange={this.updateColor}>
+                <h2 style={{color:this.colorRef.current.value}}>Enter favorite color: {this.colorRef.current.value}</h2>
+                <select ref={this.colorRef}>
+                    <option value="">choose your option</option>
                     <option value="red">red</option>
                     <option value="orange">orange</option>
                     <option value="blue">blue</option>
