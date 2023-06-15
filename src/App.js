@@ -15,9 +15,9 @@ function App() {
       <hr/>
       {/* <Colors/> */}
       <hr/>
-      <Movies/>
+      {/* <Movies/> */}
       <hr/>
-      {/* <Calculator/> */}
+      <Calculator/>
     </>
   );
 }
