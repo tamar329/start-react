@@ -8,6 +8,7 @@ import About from './about'
 import Home from './home'
 import { AppContext } from "../context/context"
 import Counter from './counter'
+import Header from '../comps_static/header'
 // import AppCasino from '../comps_casino/appCasino'
 
 export default function AppRoutes() {
@@ -23,8 +24,8 @@ export default function AppRoutes() {
                 number, setNumber,
                 coins, setCoins
             }}>
-
-                <header className='p-2 container bg-warning'>
+                <Header/>
+                {/* <header className='p-2 container bg-warning'>
                     <div className='float-end h5'>Coins:</div>
                     <Link to="/">Home</Link> |
                     <Link to="/about">About</Link> |
@@ -33,8 +34,8 @@ export default function AppRoutes() {
                     <Link to="/atlas">Atlas</Link> |
                     <Link to="/pixa/cats">Pixa</Link> |
                     <Link to="/cars">Cars</Link> |
-                    {/* <Link to="/casino">Casino</Link> */}
-                </header>
+                    <Link to="/casino">Casino</Link>
+                </header> */}
                 {/* outlet */}
                 <Routes>
                     {/* <Route path="/" element={<Home />} /> */}
