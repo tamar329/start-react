@@ -32,7 +32,26 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* for global css */
+
+header .nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .nav ul li {
+  padding: 0 8px;
+}
+
+header .nav ul li a {
+  color: white;
+  text-decoration: none;
 }
