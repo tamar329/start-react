@@ -13,9 +13,9 @@ function App() {
       <hr/> 
       <Gallery/>
       <hr/>
-      {/* <Colors/> */}
+      <Colors/>
       <hr/>
-      {/* <Movies/> */}
+      <Movies/>
       <hr/>
       <Calculator/>
     </>
